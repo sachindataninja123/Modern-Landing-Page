@@ -1,0 +1,147 @@
+@font-face {
+  font-family: kajiro;
+  src: url(kajiro-regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: kajiro;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.back {
+  height: 100vh;
+  width: 100%;
+}
+.back img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+.top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+}
+.workingarea {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 1920px;
+  position: relative;
+}
+.nleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.nright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.nleft img {
+  height: 70px;
+}
+.nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav a {
+  pointer-events: all;
+  text-decoration: none;
+  color: #fff;
+  font-family: gilroy;
+}
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hleft {
+  width: 50%;
+}
+.hleft .elem {
+  height: 10vw;
+  overflow: hidden;
+  line-height: 0.8;
+  position: relative;
+}
+.hleft .elem h1:nth-child(1) {
+  top: 0;
+}
+.hleft .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 1;
+  color: #fff;
+  font-size: 10vw;
+  font-weight: 200;
+}
+.hleft button {
+  pointer-events: all;
+  padding: 1.1vw 2.2vw;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.7vw;
+  margin-top: 60px;
+  font-weight: 100;
+}
+.hright {
+  width: 20%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hright .divimg {
+  width: 100%;
+  height: 170px;
+  background-color: red;
+}
+.hright .divimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hright p {
+  text-align: right;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hright p:nth-child(1) {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.hright #second {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
